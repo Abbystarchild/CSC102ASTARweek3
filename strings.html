@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--This is for week 3 of CSC102
+    we will make a input validation form and a pallindrome checker
+    Abby Starchild withlovefromabby@gmail.com 23, OCT 2023-->
+
+<head>
+    <script src="stringCode.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input validation</title>
+</head>
+
+<body>
+    <H1>Welcome to my strings.html page</H1>
+    <h2>Input validation section</h2>
+    <div id="loginStatus">Press Submit to login</div>
+    <p>Please submit the following data for validation.</p><br>
+    <form id="creditSubmit" onsubmit="return false">
+        First Name: <input type="text" id="fName"><br>
+        Last Name: <input type="text" id="lName"><br>
+        Zip Code: <input type="text" id="zipCode"><br>
+        <br>
+        <input type="submit" onclick="checkCreds();">
+    </form>
+    <br>
+    <br>
+    <h2>Palindrome checker</h2>
+    <br>
+    <div id="palinStatus">Palindrome Status</div>
+    <br>
+    <form id="palinSubmit" onsubmit="return false">
+        Enter possible Palindrome: <input type="text" id="palinInput"><br><br>
+
+        <input type="submit" onclick="checkPalin();">
+    </form>
+</body>
+
+</html>
